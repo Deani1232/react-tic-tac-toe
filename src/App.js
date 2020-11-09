@@ -1,10 +1,14 @@
 import React, {Component} from 'react';
+import Layout from './components/Layout/Layout';
+import TicTacToe from './containers/TicTacToe/TicTacToe';
 
 class App extends Component {
   render () {
     return (
         <div>
-          <p>Test Tic-Tac-Toe App</p>
+          <Layout>
+              <TicTacToe/>
+          </Layout>
         </div>
     );
   }

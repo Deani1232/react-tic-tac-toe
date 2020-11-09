@@ -1,0 +1,8 @@
+.GameBoard {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75vh;
+    max-width: 90%;
+    min-width: 400px;
+}

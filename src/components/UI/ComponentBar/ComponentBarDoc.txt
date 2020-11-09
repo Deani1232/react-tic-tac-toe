@@ -1,0 +1,8 @@
+Component Bars have a function of taking up 100% width,
+and they essentially allow columns of components to be built.
+
+This is a very rudimentary and simple system to use.
+It needs to be converted to flexboxes later.
+
+Currently, you can simply just use color and width settings.
+Width are percentages.

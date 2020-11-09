@@ -1,0 +1,34 @@
+.GameSquare {
+    float: left;
+    position: relative;
+    width: 30%;
+    padding-bottom: 30%;
+    margin: 1.66%;
+    background-color: #1E1E1E;
+}
+
+.Win {
+    background-color: #00bed4 !important;
+}
+
+.Content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.Table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.TableCell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.TableCell p {
+    font-size: 40px;
+}

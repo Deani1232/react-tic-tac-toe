@@ -1,0 +1,11 @@
+<div>
+    <InProgressGameBarItem width={25} color={"#ffa83e"}>
+        <CurrentTurn currentPlayer={props.currentPlayer}/>
+    </InProgressGameBarItem>
+    <InProgressGameBarItem width={25} color={"#bbbbff"}>
+        <CurrentTurn currentPlayer={props.currentPlayer}/>
+    </InProgressGameBarItem>
+    <InProgressGameBarItem width={50} color={"#ffa83e"}>
+        <CurrentTurn currentPlayer={props.currentPlayer}/>
+    </InProgressGameBarItem>
+</div>
