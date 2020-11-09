@@ -10,7 +10,6 @@ const InProgressGameBar = (props) => {
     return (
         <ComponentBar height={"130px"} alignVertically={true}>
             <ComponentBarItem color={"#ffa83e"} width={100/3}>
-                <CurrentTurn currentPlayer={props.currentPlayer}/>
             </ComponentBarItem>
             <ComponentBarItem color={"#ffa83e"} width={100/3}>
                 <ComponentBar>
