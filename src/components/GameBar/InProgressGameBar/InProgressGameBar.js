@@ -4,6 +4,7 @@ import ComponentBarItem from "../../UI/ComponentBar/ComponentBarItem/ComponentBa
 import EvenlySpacedComponentBar from "../../UI/ComponentBar/EvenlySpacedComponentBar/EvenlySpacedComponentBar";
 import ComponentBar from "../../UI/ComponentBar/ComponentBar";
 import ResetGame from "./ResetGame/ResetGame";
+import Button from "../../UI/Button/Button";
 
 const InProgressGameBar = (props) => {
     return (
@@ -12,7 +13,9 @@ const InProgressGameBar = (props) => {
                 <CurrentTurn currentPlayer={props.currentPlayer}/>
             </ComponentBarItem>
             <ComponentBarItem color={"#ffa83e"} width={100/3}>
-                <ResetGame resetGame={props.resetGame}/>
+                <ComponentBar>
+                    <ResetGame resetGame={props.resetGame}/>
+                </ComponentBar>
             </ComponentBarItem>
             <ComponentBarItem color={"#ffa83e"} width={100/3}>
                 <CurrentTurn currentPlayer={props.currentPlayer}/>

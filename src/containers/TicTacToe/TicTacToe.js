@@ -20,6 +20,7 @@ class TicTacToe extends Component {
             {id: 7, value: "", win: false},
             {id: 8, value: "", win: false}
         ]
+
     };
 
     squareClickHandler = (index) => {
