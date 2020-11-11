@@ -4,11 +4,13 @@ import CurrentTurn from "../InProgressGameBar/CurrentTurn/CurrentTurn";
 import ComponentBarItem from "../../UI/ComponentBar/ComponentBarItem/ComponentBarItem";
 import PlayerWinMessage from "./PlayerWinMessage/PlayerWinMessage";
 import Button from "../../UI/Button/Button";
+import GameBarTitle from "../GameBarTitle/GameBarTitle";
 
 const WinnerGameBar = (props) => {
     return (
         <ComponentBar height={"130px"} alignVertically={true}>
             <ComponentBarItem color={"#74ff99"} width={20}>
+                <GameBarTitle gamesPlayed={props.gamesPlayed}/>
             </ComponentBarItem>
             <ComponentBarItem color={"#74ff99"} width={60}>
                 <PlayerWinMessage winner={props.winner}/>

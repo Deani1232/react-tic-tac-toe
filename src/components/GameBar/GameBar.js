@@ -7,8 +7,8 @@ const GameBar = (props) => {
         <div>
             {
                 props.winner !== "" ?
-                <WinnerGameBar winner={props.winner} resetGame={props.resetGame}/> :
-                <InProgressGameBar currentPlayer={props.currentPlayer} resetGame={props.resetGame}/>
+                <WinnerGameBar winner={props.winner} resetGame={props.resetGame} gamesPlayed={props.gamesPlayed}/> :
+                <InProgressGameBar currentPlayer={props.currentPlayer} resetGame={props.resetGame} gamesPlayed={props.gamesPlayed}/>
             }
         </div>
     );

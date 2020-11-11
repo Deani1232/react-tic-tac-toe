@@ -5,11 +5,13 @@ import EvenlySpacedComponentBar from "../../UI/ComponentBar/EvenlySpacedComponen
 import ComponentBar from "../../UI/ComponentBar/ComponentBar";
 import ResetGame from "./ResetGame/ResetGame";
 import Button from "../../UI/Button/Button";
+import GameBarTitle from "../GameBarTitle/GameBarTitle";
 
 const InProgressGameBar = (props) => {
     return (
         <ComponentBar height={"130px"} alignVertically={true}>
             <ComponentBarItem color={"#ffa83e"} width={100/3}>
+                <GameBarTitle gamesPlayed={props.gamesPlayed}/>
             </ComponentBarItem>
             <ComponentBarItem color={"#ffa83e"} width={100/3}>
                 <ComponentBar>

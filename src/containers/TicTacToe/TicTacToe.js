@@ -19,7 +19,8 @@ class TicTacToe extends Component {
             {id: 6, value: "", win: false},
             {id: 7, value: "", win: false},
             {id: 8, value: "", win: false}
-        ]
+        ],
+        gamesPlayed: 0
 
     };
 
@@ -44,7 +45,6 @@ class TicTacToe extends Component {
                 winner: prevPlayer
             })
         }
-        //TODO: Add in logic to draw game
     };
 
     possibleWins = [
@@ -80,12 +80,28 @@ class TicTacToe extends Component {
         return false;
     };
 
-    checkForDraw = () => {
+    isOneSquareOrMoreFilled() {
+        let squareArray = [...this.state.squares];
+        for (let element of squareArray) {
+            if (element.value !== "") {
+                return true;
+            }
+        }
+        return false;
+    }
 
+    checkForDraw = () => {
+        //TODO: Implement this
     };
 
     resetGameHandler = () => {
         let squareArray = [...this.state.squares];
+        if (this.isOneSquareOrMoreFilled()) {
+            let amount = this.state.gamesPlayed;
+            this.setState({
+                gamesPlayed: amount += 1
+            })
+        }
         for (let element of squareArray) {
             element.value = "";
             element.win = false;
@@ -93,7 +109,7 @@ class TicTacToe extends Component {
         this.setState({
             squares: squareArray,
             currentPlayer: "X",
-            winner: ""
+            winner: "",
         });
     };
 
@@ -102,7 +118,8 @@ class TicTacToe extends Component {
             <Aux>
                 <GameBar currentPlayer={this.state.currentPlayer}
                          resetGame={this.resetGameHandler}
-                         winner={this.state.winner}/>
+                         winner={this.state.winner}
+                         gamesPlayed={this.state.gamesPlayed}/>
                 <div style={{height: "40px"}}></div>
                 <GameBoard squareClick={this.squareClickHandler} squares={this.state.squares}/>
             </Aux>
