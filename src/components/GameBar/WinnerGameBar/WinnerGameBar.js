@@ -9,13 +9,13 @@ import GameBarTitle from "../GameBarTitle/GameBarTitle";
 const WinnerGameBar = (props) => {
     return (
         <ComponentBar height={"130px"} alignVertically={true}>
-            <ComponentBarItem color={"#74ff99"} width={20}>
+            <ComponentBarItem color={"#74ff99"} width={30}>
                 <GameBarTitle gamesPlayed={props.gamesPlayed}/>
             </ComponentBarItem>
-            <ComponentBarItem color={"#74ff99"} width={60}>
+            <ComponentBarItem color={"#74ff99"} width={40}>
                 <PlayerWinMessage winner={props.winner}/>
             </ComponentBarItem>
-            <ComponentBarItem color={"#74ff99"} width={20}>
+            <ComponentBarItem color={"#74ff99"} width={30}>
                 <Button onClick={props.resetGame}>New Game</Button>
             </ComponentBarItem>
         </ComponentBar>

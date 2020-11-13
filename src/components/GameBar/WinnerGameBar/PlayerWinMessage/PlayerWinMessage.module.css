@@ -8,3 +8,9 @@
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     font-size: 70px;
 }
+
+@media (max-width: 900px) {
+    .WinnerMessageBlock p {
+        font-size: 40px;
+    }
+}
